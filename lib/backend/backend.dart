@@ -5,17 +5,45 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 
 import 'schema/users_record.dart';
+import 'schema/orders_record.dart';
+import 'schema/services_record.dart';
+import 'schema/service_categories_record.dart';
 import 'schema/serializers.dart';
 
 export 'package:cloud_firestore/cloud_firestore.dart';
 export 'schema/serializers.dart';
 export 'schema/users_record.dart';
+export 'schema/orders_record.dart';
+export 'schema/services_record.dart';
+export 'schema/service_categories_record.dart';
 
 Stream<List<UsersRecord>> queryUsersRecord(
         {Query Function(Query) queryBuilder,
         int limit = -1,
         bool singleRecord = false}) =>
     queryCollection(UsersRecord.collection, UsersRecord.serializer,
+        queryBuilder: queryBuilder, limit: limit, singleRecord: singleRecord);
+
+Stream<List<OrdersRecord>> queryOrdersRecord(
+        {Query Function(Query) queryBuilder,
+        int limit = -1,
+        bool singleRecord = false}) =>
+    queryCollection(OrdersRecord.collection, OrdersRecord.serializer,
+        queryBuilder: queryBuilder, limit: limit, singleRecord: singleRecord);
+
+Stream<List<ServicesRecord>> queryServicesRecord(
+        {Query Function(Query) queryBuilder,
+        int limit = -1,
+        bool singleRecord = false}) =>
+    queryCollection(ServicesRecord.collection, ServicesRecord.serializer,
+        queryBuilder: queryBuilder, limit: limit, singleRecord: singleRecord);
+
+Stream<List<ServiceCategoriesRecord>> queryServiceCategoriesRecord(
+        {Query Function(Query) queryBuilder,
+        int limit = -1,
+        bool singleRecord = false}) =>
+    queryCollection(
+        ServiceCategoriesRecord.collection, ServiceCategoriesRecord.serializer,
         queryBuilder: queryBuilder, limit: limit, singleRecord: singleRecord);
 
 Stream<List<T>> queryCollection<T>(

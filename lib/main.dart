@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'auth/firebase_user_provider.dart';
 import 'package:qucek/phone_verification_page/phone_verification_page_widget.dart';
-import 'package:qucek/home_page/home_page_widget.dart';
+import 'package:qucek/order_detail_page/order_detail_page_widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
               ),
             )
           : currentUser.loggedIn
-              ? HomePageWidget()
+              ? OrderDetailPageWidget()
               : PhoneVerificationPageWidget(),
     );
   }
