@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1082999969829-s84ps5dgr7q8uii4vh0ga7u4kg96378c.apps.googleusercontent.com</string>
+	<string>425496563944-c3a0afv5urgj66hsbcpeikcm53pt8rmj.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1082999969829-s84ps5dgr7q8uii4vh0ga7u4kg96378c</string>
+	<string>com.googleusercontent.apps.425496563944-c3a0afv5urgj66hsbcpeikcm53pt8rmj</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB9nCymIkDTipaRzIDAp5ReF78Pro47Mps</string>
+	<string>AIzaSyDHq_sY-PWNAYlGqp18dm2O21I-egtwQ4c</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1082999969829</string>
+	<string>425496563944</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.qucek.app</string>
 	<key>PROJECT_ID</key>
-	<string>qucek-285013</string>
+	<string>qucek-657dc</string>
 	<key>STORAGE_BUCKET</key>
-	<string>qucek-285013.appspot.com</string>
+	<string>qucek-657dc.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1082999969829:ios:0d670221af63abf48e07cc</string>
-	<key>DATABASE_URL</key>
-	<string>https://qucek-285013-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+	<string>1:425496563944:ios:8a37a012d0b72248b9395d</string>
 </dict>
 </plist>

@@ -1,35 +1,41 @@
 {
   "project_info": {
-    "project_number": "1082999969829",
-    "firebase_url": "https://qucek-285013-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "qucek-285013",
-    "storage_bucket": "qucek-285013.appspot.com"
+    "project_number": "425496563944",
+    "project_id": "qucek-657dc",
+    "storage_bucket": "qucek-657dc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1082999969829:android:844d1bba26e80ab38e07cc",
+        "mobilesdk_app_id": "1:425496563944:android:074ef66c8d3975c2b9395d",
         "android_client_info": {
           "package_name": "com.qucek.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1082999969829-0thbnlbg5v1dgqa8bqcr1gnjh4jsktnc.apps.googleusercontent.com",
+          "client_id": "425496563944-b83i5ng8po64ckfq16teb6o1fla3cs7q.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD80skwNbxhQotuw922tu9nuCRg8Ijdrc0"
+          "current_key": "AIzaSyAxQ1mmrkF4wupUs18y3FWg-O1DWdqfW_Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1082999969829-0thbnlbg5v1dgqa8bqcr1gnjh4jsktnc.apps.googleusercontent.com",
+              "client_id": "425496563944-b83i5ng8po64ckfq16teb6o1fla3cs7q.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "425496563944-c3a0afv5urgj66hsbcpeikcm53pt8rmj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.qucek.app"
+              }
             }
           ]
         }
