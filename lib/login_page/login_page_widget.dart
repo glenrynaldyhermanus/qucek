@@ -67,12 +67,6 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                         style: FlutterFlowTheme.bodyText1.override(
                           fontFamily: 'Comfortaa',
                         ),
-                      ),
-                      Text(
-                        widget.phone,
-                        style: FlutterFlowTheme.bodyText1.override(
-                          fontFamily: 'Comfortaa',
-                        ),
                       )
                     ],
                   ),

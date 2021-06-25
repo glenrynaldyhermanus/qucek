@@ -56,12 +56,6 @@ class _PhoneVerificationPageWidgetState
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'Insert Your Phone',
-                    style: FlutterFlowTheme.title3.override(
-                      fontFamily: 'Comfortaa',
-                    ),
-                  ),
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
                     child: Container(
