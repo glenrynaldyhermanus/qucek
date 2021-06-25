@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "425496563944-j38glagkf82uar3i473pfumcpu51s4pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qucek.app",
+            "certificate_hash": "55bfa6d66e57b9aed9bdb5191377f2179255ad3f"
+          }
+        },
+        {
           "client_id": "425496563944-b83i5ng8po64ckfq16teb6o1fla3cs7q.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -15,9 +15,6 @@ abstract class UsersRecord implements Built<UsersRecord, UsersRecordBuilder> {
   static Serializer<UsersRecord> get serializer => _$usersRecordSerializer;
 
   @nullable
-  String get fullName;
-
-  @nullable
   String get email;
 
   @nullable
@@ -44,7 +41,6 @@ abstract class UsersRecord implements Built<UsersRecord, UsersRecordBuilder> {
   DocumentReference get reference;
 
   static void _initializeBuilder(UsersRecordBuilder builder) => builder
-    ..fullName = ''
     ..email = ''
     ..displayName = ''
     ..photoUrl = ''
@@ -69,7 +65,6 @@ abstract class UsersRecord implements Built<UsersRecord, UsersRecordBuilder> {
 }
 
 Map<String, dynamic> createUsersRecordData({
-  String fullName,
   String email,
   String displayName,
   String photoUrl,
@@ -80,7 +75,6 @@ Map<String, dynamic> createUsersRecordData({
     serializers.toFirestore(
         UsersRecord.serializer,
         UsersRecord((u) => u
-          ..fullName = fullName
           ..email = email
           ..displayName = displayName
           ..photoUrl = photoUrl
@@ -90,7 +84,6 @@ Map<String, dynamic> createUsersRecordData({
 
 UsersRecord get dummyUsersRecord {
   final builder = UsersRecordBuilder()
-    ..fullName = dummyString
     ..email = dummyString
     ..displayName = dummyString
     ..photoUrl = dummyImagePath
