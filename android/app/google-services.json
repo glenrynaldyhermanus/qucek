@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1082999969829",
+    "firebase_url": "https://qucek-285013-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "qucek-285013",
+    "storage_bucket": "qucek-285013.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082999969829:android:844d1bba26e80ab38e07cc",
+        "android_client_info": {
+          "package_name": "com.qucek.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082999969829-0thbnlbg5v1dgqa8bqcr1gnjh4jsktnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD80skwNbxhQotuw922tu9nuCRg8Ijdrc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082999969829-0thbnlbg5v1dgqa8bqcr1gnjh4jsktnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
