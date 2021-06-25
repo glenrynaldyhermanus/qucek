@@ -1,4 +1,3 @@
-import '../backend/api_requests/api_calls.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -122,8 +121,8 @@ class _RegistrationPageWidgetState extends State<RegistrationPageWidget> {
               Padding(
                 padding: EdgeInsets.fromLTRB(0, 32, 0, 0),
                 child: FFButtonWidget(
-                  onPressed: () async {
-                    await registerCall();
+                  onPressed: () {
+                    print('Button pressed ...');
                   },
                   text: 'Save',
                   options: FFButtonOptions(
