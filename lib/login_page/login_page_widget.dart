@@ -63,7 +63,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Text(
-                        'We\'ve sent you OTP to ',
+                        'We\'ve sent you OTP with SMS',
                         style: FlutterFlowTheme.bodyText1.override(
                           fontFamily: 'Comfortaa',
                         ),
