@@ -1,13 +1,8 @@
 import 'dart:async';
 
-import 'package:built_value/built_value.dart';
-import 'package:built_value/serializer.dart';
-import 'package:built_collection/built_collection.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:latlong/latlong.dart';
-
-import 'schema_util.dart';
+import 'index.dart';
 import 'serializers.dart';
+import 'package:built_value/built_value.dart';
 
 part 'services_record.g.dart';
 
@@ -114,21 +109,3 @@ Map<String, dynamic> createServicesRecordData({
           ..colorBase = colorBase
           ..colorItem = colorItem
           ..pictureUrl = pictureUrl));
-
-ServicesRecord get dummyServicesRecord {
-  final builder = ServicesRecordBuilder()
-    ..uid = dummyString
-    ..code = dummyString
-    ..name = dummyString
-    ..fee = dummyDouble
-    ..feeUnit = dummyString
-    ..sla = dummyInteger
-    ..slaUnit = dummyString
-    ..colorBase = dummyString
-    ..colorItem = dummyString
-    ..pictureUrl = dummyImagePath;
-  return builder.build();
-}
-
-List<ServicesRecord> createDummyServicesRecord({int count}) =>
-    List.generate(count, (_) => dummyServicesRecord);

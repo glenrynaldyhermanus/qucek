@@ -11,7 +11,9 @@ import 'schema/service_categories_record.dart';
 import 'schema/serializers.dart';
 
 export 'package:cloud_firestore/cloud_firestore.dart';
+export 'schema/index.dart';
 export 'schema/serializers.dart';
+
 export 'schema/users_record.dart';
 export 'schema/orders_record.dart';
 export 'schema/services_record.dart';

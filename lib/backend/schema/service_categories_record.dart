@@ -1,13 +1,8 @@
 import 'dart:async';
 
-import 'package:built_value/built_value.dart';
-import 'package:built_value/serializer.dart';
-import 'package:built_collection/built_collection.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:latlong/latlong.dart';
-
-import 'schema_util.dart';
+import 'index.dart';
 import 'serializers.dart';
+import 'package:built_value/built_value.dart';
 
 part 'service_categories_record.g.dart';
 
@@ -64,14 +59,3 @@ Map<String, dynamic> createServiceCategoriesRecordData({
           ..uid = uid
           ..code = code
           ..name = name));
-
-ServiceCategoriesRecord get dummyServiceCategoriesRecord {
-  final builder = ServiceCategoriesRecordBuilder()
-    ..uid = dummyString
-    ..code = dummyString
-    ..name = dummyString;
-  return builder.build();
-}
-
-List<ServiceCategoriesRecord> createDummyServiceCategoriesRecord({int count}) =>
-    List.generate(count, (_) => dummyServiceCategoriesRecord);

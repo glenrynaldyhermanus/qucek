@@ -1,13 +1,8 @@
 import 'dart:async';
 
-import 'package:built_value/built_value.dart';
-import 'package:built_value/serializer.dart';
-import 'package:built_collection/built_collection.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:latlong/latlong.dart';
-
-import 'schema_util.dart';
+import 'index.dart';
 import 'serializers.dart';
+import 'package:built_value/built_value.dart';
 
 part 'users_record.g.dart';
 
@@ -37,6 +32,9 @@ abstract class UsersRecord implements Built<UsersRecord, UsersRecordBuilder> {
   String get phoneNumber;
 
   @nullable
+  int get age;
+
+  @nullable
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference get reference;
 
@@ -45,7 +43,8 @@ abstract class UsersRecord implements Built<UsersRecord, UsersRecordBuilder> {
     ..displayName = ''
     ..photoUrl = ''
     ..uid = ''
-    ..phoneNumber = '';
+    ..phoneNumber = ''
+    ..age = 0;
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('users');
@@ -71,6 +70,7 @@ Map<String, dynamic> createUsersRecordData({
   String uid,
   DateTime createdTime,
   String phoneNumber,
+  int age,
 }) =>
     serializers.toFirestore(
         UsersRecord.serializer,
@@ -80,18 +80,5 @@ Map<String, dynamic> createUsersRecordData({
           ..photoUrl = photoUrl
           ..uid = uid
           ..createdTime = createdTime
-          ..phoneNumber = phoneNumber));
-
-UsersRecord get dummyUsersRecord {
-  final builder = UsersRecordBuilder()
-    ..email = dummyString
-    ..displayName = dummyString
-    ..photoUrl = dummyImagePath
-    ..uid = dummyString
-    ..createdTime = dummyTimestamp
-    ..phoneNumber = dummyString;
-  return builder.build();
-}
-
-List<UsersRecord> createDummyUsersRecord({int count}) =>
-    List.generate(count, (_) => dummyUsersRecord);
+          ..phoneNumber = phoneNumber
+          ..age = age));
