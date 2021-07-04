@@ -129,29 +129,41 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       ),
                     ),
                   ),
-                  Align(
-                    alignment: Alignment(1, 0),
-                    child: Padding(
-                      padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-                      child: FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
-                        },
-                        text: 'Resend SMS',
-                        options: FFButtonOptions(
-                          width: 110,
-                          height: 40,
-                          color: FlutterFlowTheme.primaryColor,
-                          textStyle: FlutterFlowTheme.bodyText1.override(
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Resend on',
+                          style: FlutterFlowTheme.bodyText1.override(
                             fontFamily: 'Comfortaa',
                           ),
-                          borderSide: BorderSide(
-                            color: Colors.transparent,
-                            width: 1,
-                          ),
-                          borderRadius: 12,
                         ),
-                      ),
+                        Align(
+                          alignment: Alignment(1, 0),
+                          child: FFButtonWidget(
+                            onPressed: () {
+                              print('Button pressed ...');
+                            },
+                            text: 'Resend SMS',
+                            options: FFButtonOptions(
+                              width: 132,
+                              height: 40,
+                              color: FlutterFlowTheme.primaryColor,
+                              textStyle: FlutterFlowTheme.bodyText1.override(
+                                fontFamily: 'Comfortaa',
+                              ),
+                              borderSide: BorderSide(
+                                color: Colors.transparent,
+                                width: 1,
+                              ),
+                              borderRadius: 12,
+                            ),
+                          ),
+                        )
+                      ],
                     ),
                   )
                 ],
